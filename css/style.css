@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(254,254,253);
+}
+div {
+  display: inline-block;
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: baseline;
+
+}
+.title {
+  display: inline-block;
+  flex-grow: 1;
+  width: 450px;
+  height: 315px;
+  background-color: rgb(255,99,177);
+}
+.projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  /*flex-grow: 2;*/
+  background-color: yellow;
+  width: 800px;
+  /*margin-left: 120px;*/
+}
+.aboutMe {
+  background-color: green;
+  max-width: 570px;
+  /*flex-shrink: 1;*/
+  align-self: baseline;
+}
+.contact {
+  background-color: orange;
+}
+.image {
+  max-width: 300px;
+  max-height: 225px;
+}
