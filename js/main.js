@@ -34,10 +34,10 @@ var cycle =   _.each(colours, function(c) {
 
 // });
 
-$circle.hover( function () {
-  console.log('hi');
+$circle.mouseover( function () {
+  // console.log('hi');
   $(this).css('background-color', (_.sample(colours)));
-  console.log($(this).css('background-color'));
+  // console.log($(this).css('background-color'));
 });
 
 // $circle.hover(
@@ -54,7 +54,7 @@ $circle.hover( function () {
 // );
 
 
-var navHeight = $('nav').offset().top;
+var navHeight = $('nav').position().top;
 
 $(window).bind('scroll', function() {
 
@@ -69,9 +69,12 @@ $(window).bind('scroll', function() {
   if ($(window).scrollTop() >= navHeight) {
     // $('nav').removeClass('bottom');
     $('nav').addClass('fixed');
+    $('div.projects').addClass('compensate');
   }
   else if($(window).scrollTop() <= navHeight){
     $('nav').removeClass('fixed');
+    $('div.projects').removeClass('compensate');
+
     // $('nav').addClass('bottom');
   } else {
     console.log('working?');
