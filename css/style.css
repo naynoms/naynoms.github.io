@@ -208,12 +208,19 @@ li:not(:first-child):before {
 
 
 
-@keyframes blue {
-  0%, 100% {background-color: #c9f0ff;}
-  33% {background-color: #eafffd;}
-  66% {background-color: #a6e4fc;}
-}
+  @-webkit-keyframes blue {
+    0%, 100% {background-color: #c9f0ff;}
+    33% {background-color: #eafffd;}
+    66% {background-color: #a6e4fc;}
+  }
 
-.title {
-  animation: blue 5s infinite;
-}
+  @keyframes blue {
+    0%, 100% {background-color: #c9f0ff;}
+    33% {background-color: #eafffd;}
+    66% {background-color: #a6e4fc;}
+  }
+
+  .title {
+    -webkit-animation: blue 5s infinite;
+            animation: blue 5s infinite;
+  }
