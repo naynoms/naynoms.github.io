@@ -3,6 +3,7 @@
 }
 html {
   height: 100%;
+  width: 100%;
 }
 body {
   background-color: rgb(254,254,253);
@@ -23,10 +24,12 @@ h3 {
   font-size: 30px;
 }
 a {
-  margin-left: 1%;
-  margin-right: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
   text-decoration: none;
   color: black;
+  display: inline-block;
+  transition: all .5s;
 }
 a:active {
   color: black;
@@ -35,22 +38,18 @@ a:hover {
   /*background-color: rgba(192, 192, 192, 0.5);*/
   border-radius: 50%;
   text-shadow: 0 0 20px rgb(83,207,255);
+  transform: scale(1.5);
 }
 nav {
-  /*padding-bottom: 15%;*/
-  /*padding-top: 25%;*/
+
   text-align: center;
   height: 70px;
-  /*border: 1px solid black;*/
   background-color: rgb(254,254,253);
-
-  /*display: block;*/
-  /*margin-top: auto;*/
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  /*bottom: 0;*/
+
 
 
 
@@ -119,10 +118,13 @@ li:not(:first-child):before {
   /*background-color: yellow;*/
   max-width: 800px;
   padding-bottom: 15%;
-  padding-top: 18%;
+  padding-top: 12%;
   text-align: center;
   /*height: 800px;*/
   /*margin: 0 auto;*/
+}
+.project3, .project2, .project1, .project0 {
+  padding-bottom: 2%;
 }
 .aboutMe {
   display: flex;
@@ -186,4 +188,32 @@ li:not(:first-child):before {
 	z-index: 1;
   width: 100%;
   /*display: block;*/
+}
+
+
+/*@keyframes spin {
+  0%, 100% {background-color: #ff0000;}
+  8% {background-color: #ff8000; }
+  16% {background-color: #ffff00;}
+  24% {background-color: #80ff00;}
+  32% {background-color: #00ff00;}
+  40% {background-color: #00ff80;}
+  48% {background-color: #00ffff;}
+  56% {background-color: #0080ff;}
+  64% {background-color: #0000ff;}
+  72% {background-color: #7f00ff;}
+  80% {background-color: #ff00ff;}
+  88% {background-color: #ff007f;}
+  /*100% {background-color: white;}*/
+
+
+}*/
+@keyframes blue {
+  0%, 100% {background-color: #c9f0ff;}
+  33% {background-color: #eafffd;}
+  66% {background-color: #a6e4fc;}
+}
+
+.title {
+  animation: blue 5s 5;
 }
