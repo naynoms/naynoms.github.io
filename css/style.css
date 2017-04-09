@@ -204,10 +204,10 @@ li:not(:first-child):before {
   72% {background-color: #7f00ff;}
   80% {background-color: #ff00ff;}
   88% {background-color: #ff007f;}
-  /*100% {background-color: white;}*/
+  }*/
 
 
-}*/
+
 @keyframes blue {
   0%, 100% {background-color: #c9f0ff;}
   33% {background-color: #eafffd;}
@@ -215,5 +215,5 @@ li:not(:first-child):before {
 }
 
 .title {
-  animation: blue 5s 5;
+  animation: blue 5s infinite;
 }
