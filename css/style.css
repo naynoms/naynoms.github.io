@@ -171,8 +171,9 @@ li:not(:first-child):before {
   /*text-align: center;*/
 }
 .contact {
-  min-width: 300px;
-  max-width: 800px;
+  /*min-width: 300px;*/
+  /*max-width: 800px;*/
+  width: 100vw;
   padding-top: 10%;
   padding-bottom: 15%;
   text-align: center;
