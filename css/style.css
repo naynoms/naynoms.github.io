@@ -140,13 +140,11 @@ li:not(:first-child):before {
   flex-wrap: wrap;
   justify-content: space-around;
   flex-grow: 2;
-  /*background-color: yellow;*/
-  max-width: 800px;
+  max-width: 100vw;
   padding-bottom: 15%;
   padding-top: 12%;
   text-align: center;
-  /*height: 800px;*/
-  /*margin: 0 auto;*/
+
 }
 .project3, .project2, .project1, .project0 {
   padding-bottom: 2%;
@@ -154,22 +152,17 @@ li:not(:first-child):before {
 .aboutMe {
   display: flex;
   justify-content: space-around;
-  /*sbackground-color: lightgreen;*/
-  max-width: 800px;
-  /*max-width: 450px;*/
-  /*flex-grow: 1;*/
-  /*flex-shrink: 1;*/
-  /*align-self: baseline;*/
+  max-width: 100vw;
   padding-bottom: 15%;
   padding-top: 10%;
   flex-wrap: wrap;
 }
 .me {
   flex-grow: 1;
-  width: 100%;
+  width: 90vw;
 }
 .skills {
-  width: 100%;
+  width: 90vw;
   /*flex-grow: 3;*/
   /*display: block*/
   /*text-align: center;*/
@@ -178,8 +171,8 @@ li:not(:first-child):before {
   /*background-color: orange;*/
   /*flex-grow: 1;*/
   /*border-radius: 50%;*/
-  width: 800px;
-  max-width: 800px;
+  /*width: 800px;*/
+  max-width: 800vw;
   padding-top: 10%;
   padding-bottom: 15%;
   text-align: center;
