@@ -83,7 +83,7 @@ li:not(:first-child):before {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
   h1 {
     font-size: 24px;
     text-align: center;
@@ -96,12 +96,19 @@ li:not(:first-child):before {
     height: 300px;
     max-width: 300px;
     max-height: 300px;
+    padding-top: 20%;
+    margin-bottom: 5%;
   }
   .inner {
     width: 250px;
     height: 200px;
     max-width: 250px;
     max-height: 200px;
+  }
+  .nav {
+    padding-top: 15%;
+    padding-bottom: 35%;
+    color: blue;
   }
 }
 
